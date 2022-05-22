@@ -58,7 +58,7 @@ function selectAnswer(e){
     if (shuffleQuestions.length > currentQuestionIndex +1){
         nextButton.classList.remove('hidden')
     } else {
-        startButton.innerText = "Restart"
+        startButton.innerText = "Thank you! Click here to restart"
         startButton.classList.remove('hidden')
     }
 
@@ -81,21 +81,49 @@ function clearStatusClass(element){
 
 const questions = [
     {
-        question: 'What is 5 * 5?',
+        question: 'What do I do in my free time besides surfing the web?',
         answers: [
-            {text: '25', correct: true},
-            {text: '5', correct: false},
-            {text: '8', correct: false},
-            {text: 'idk', correct: false},
+            {text: 'Climbing', correct: false},
+            {text: 'Sleeping', correct: false},
+            {text: 'Surfing waves', correct: true},
+            {text: 'Running', correct: false},
         ]
     },
     {
-        question: 'What is 1 + 1?',
+        question: 'Which of these describe me?',
         answers: [
-            {text: '2', correct: true},
-            {text: '8', correct: false},
-            {text: 'give me fun questions', correct: false},
-            {text: 'I should go to bed', correct: false},
+            {text: 'Team player', correct: true},
+            {text: 'Eager to learn', correct: true},
+            {text: 'Positive attitude', correct: true},
+            {text: 'Critical thinker', correct: true},
+        ]
+    },
+    {
+        question: 'Where do I see myself in a few years?',
+        answers: [
+            {text: 'In my current comfort zone', correct: false},
+            {text: 'On the other side of this interview', correct: false},
+            {text: 'As an experience software engineer continously learning new things', correct: true},
+            {text: 'Stuck in tutorial hell', correct: false},
+        ]
+    },
+    {
+        question: 'Which characteristic trait defines me the most?',
+        answers: [
+            {text: 'Humoristic', correct: false},
+            {text: 'Optimistic', correct: false},
+            {text: 'Enthousiastic', correct: false},
+            {text: 'Hands on mentality', correct: true},
+        ]
+    },
+    ,
+    {
+        question: 'What is my motivation to become a software engineer?',
+        answers: [
+            {text: 'Have challenging tasks where I can have a meaningful impact', correct: true},
+            {text: 'Earn more money', correct: false},
+            {text: 'To brag at the yearly family meetup', correct: false},
+            {text: 'Because I like computers', correct: false},
         ]
     }
 ]
