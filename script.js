@@ -116,14 +116,13 @@ const questions = [
             {text: 'Hands on mentality', correct: true},
         ]
     },
-    ,
     {
         question: 'What is my motivation to become a software engineer?',
         answers: [
             {text: 'Have challenging tasks where I can have a meaningful impact', correct: true},
             {text: 'Earn more money', correct: false},
             {text: 'To brag at the yearly family meetup', correct: false},
-            {text: 'Because I like computers', correct: false},
+            {text: 'I like computers', correct: false},
         ]
     }
 ]
